@@ -1,27 +1,17 @@
 <h1 align="center">Google Camera Module</h1>
 <h3 align="center">for kenzo/kate devices</h3>
 
-<div align="center">
-  <!-- Version -->
-  <img src="https://img.shields.io/badge/Version-1.4-informational?style=flat-square"
-       alt="Version" />
-  <!-- Last Commit -->
-  <img src="https://img.shields.io/github/last-commit/Magisk-Modules-Repo/gcam_module_kenzo?style=flat-square"
-       alt="Last Commit" />
-  <!-- License -->
-  <img src="https://img.shields.io/badge/License-GPL%20v3-yellow?style=flat-square"
-       alt="License" />
-</div>
-
-This module fixes some issues currently encountered on Redmi Note 3 and Redmi Note 3 Pro when using modified Google Camera Version 5.x, 6.x and 7.x by replacing original cam libraries with modified one's.
+This module fixes some issues currently encountered on Redmi Note 3 and Redmi Note 3 Pro when using modified Google Camera by replacing original cam libraries with modified one's.
 It also enables some features not present in custom ROMs.
 
+This module is to be used at your own risk, this is a fork of Abhishek's module, I updated the module to work with Android 11.
+
 ## Working
-Currently this module adds/replaces libs/files in `/system/apex`, `/system/etc`, `/system/lib`, `/system/lib64`, `/system/vendor/etc`, `system/vendor/lib`.
+Currently this module virtually adds/replaces libs/files in `system/vendor/lib` `system/vendor/etc`,  modules can be deactivated through magisk to revert back to the stock functionality..
 
 ## Compatibility
-- This module is compatible with Android 8.0+ (All custom ROM's, **NOT** with stock).
-- Module is compatible with following GCam versions - `5.x`, `6.x` and `7.x`.
+- This module is compatible with Android 11.
+- for previous version of Android use v1.4 for better functionality. 
 ## Current List of Features
 1. Enables 60 FPS video recording
 2. Fixes green tint on front camera
@@ -29,7 +19,7 @@ Currently this module adds/replaces libs/files in `/system/apex`, `/system/etc`,
 4. Increased Maximum ISO value - 12,800
 5. Constant framerates when shooting videos
 6. Improved Denoising for 30 fps videos
-7. Codec2 support
+
 
 ## Who did what ?
 - [**SerJo87**](https://forum.xda-developers.com/member.php?u=5074663) and [**Kiraryu**](https://forum.xda-developers.com/member.php?u=8549930) modified the the initial libs that enable 60fps recording. (Currently not using the libs)
@@ -51,6 +41,12 @@ Currently this module adds/replaces libs/files in `/system/apex`, `/system/etc`,
 - Telegram Group - https://t.me/rn3photography
 
 ## Changelogs
+### 1.5-A11
+- Support for Android 11, for previous version of Android use v1.4 for better functionality.
+- Removed libs causing non boot. 
+- removed swcodec (not needed?)
+- Based off Abhishek's module.
+
 ### 1.4
 - Support for Android 10.
 - Upgraded to MMT-Extended (MMT-Ex) template from Unity (frequently updated by Zack).

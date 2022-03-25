@@ -3,8 +3,9 @@ device_check "kenzo"|"kate"
 
 ui_print "-------------------------------------------------"
 ui_print "           GCam Module for kenzo/kate            "
-ui_print "              By @BoogeyWoogey69                 "
-ui_print "            Current Version - V1.4               "
+ui_print "              By @gigabyte_1000 (V1.5),          "
+ui_print "              By @BoogeyWoogey69 (v1.4)          "
+ui_print "            Current Version - V1.5               "
 ui_print "-------------------------------------------------"
 ui_print " "
 ui_print "~ List of features -                             "
@@ -16,6 +17,5 @@ ui_print "6. Constant framerates when shooting videos      "
 ui_print "7. Improved Denoising for 30 fps videos          "
 ui_print "8. Codec2 Support                                "
 ui_print "-------------------------------------------------"
-
 ui_print "~ Enabling Codec2 ...                            "
 prop_process $MODPATH/common/custom.prop
